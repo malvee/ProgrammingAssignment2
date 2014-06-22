@@ -1,6 +1,6 @@
 ## Put comments here that give an overall description of what your
 ## functions do
-
+## The function makeCacheMatrix creates a vector  which contains the various functions needed in cacheSolve function
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -19,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## the control flow is obvious and it first checks to see if there is a cachedInverse, if not then it calculates it.
 cacheSolve <- function(x, ...) {
 	m <- x$getInverse()
 	if(!is.null(m))
